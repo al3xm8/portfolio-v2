@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+
+}
+
+.app {
+
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+
+  height: 100%;
+}
+
+body{
+  background-color: rgb(8, 9, 16);
+}
+
+header {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100px;
+  align-items: center;
+
+}
+
+.navbar-name {
+
+  font-size: 30px;
+
+  margin-left: 35px;
+  justify-content: left;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 7%;
+
+  margin-right: 35px;
+  justify-content: right;
+}
+
+.navbar-links-link {
+
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 40px;
+}
+main {
+  font-size: 70px;
+  text-align: center;
+  align-content: center;
+}
+
+.aboutme-intro {
+  height: 400px;
+
+  align-content: center;
+}
+.aboutme-intro-title {
+
+  color: rgb(145, 221, 107);
+}
+
+
+footer {
+
+  text-align: center;
+}
