@@ -1,6 +1,4 @@
 import './App.css';
-import LinkedLogoBlack from './assets/linkedin-logo-black.png'
-import GithubLogoBalck from './assets/github-logo-black.png'
 function App() {
   return (
     <div className="app">
