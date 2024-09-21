@@ -1,4 +1,6 @@
 import './App.css';
+import Typical from 'react-typical';
+
 function App() {
   return (
     <div className="app">
@@ -47,10 +49,28 @@ function App() {
       {/* The content of the portfolio*/}
       <main>
 
-      <div className='aboutme-intro'>
+        <div className='aboutme-intro'>
         <p>👋🏾 Hi, my name is Alex Matos!</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a future <a className='aboutme-intro-title'>Software Engineer</a></p>
-      </div>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a {' '}
+          <span className="block text-blue-500 z-0 lg:inline">
+          <Typical className='aboutme-intro-title'
+            steps={[
+              "Backend Engineer",
+              1500,
+              "Fullstack Engineer",
+              1500,
+              "Mobile Developer",
+              1500,
+              "System Administrator",
+              1500,
+            ]}
+            loop={Infinity}
+            wrapper='span'
+          />
+        </span>
+        </p>
+        </div>
     
       </main>
 
