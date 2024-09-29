@@ -47,12 +47,9 @@ import image35 from "./images/img35.jpeg";
 
 function App() {
   const images = [
-    image1, image2, image3, image4, image5,
-    image6, image7, image8,  image10,
-    image11, image13, image14, image15,image18,
-    image16, image17,  image20, image21,
-    image22, image23, image24, image25,  image27, image28,
-    image29, image30, image32,  image35
+    image6, image2, image3, image4, image31,image29, image7,
+    image35, image10,image30, image13, image14, image28,image18,
+    image16, image17,  image11, image21,image22, image23, image24
   ];
 
     // Randomly change the opacity of images
