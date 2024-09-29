@@ -8,7 +8,7 @@
 .app {
 
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 100px 100vh;
 
   height: 100%;
 }
@@ -17,11 +17,38 @@ body{
   background-color: rgb(8, 9, 16);
 }
 
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 10 columns */
+  grid-template-rows: repeat(7, 1fr); /* 10 rows */
+  gap: 20px; /* No gaps between images */
+  position: absolute; /* To make it cover the background */
+  
+  
+  margin: 20px;
+  margin-top: 100px;
+
+  height: 100vh;
+  z-index: -1; /* Send the grid behind other content */
+}
+
+.background-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 5%;
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+  filter: grayscale(100%);
+}
+
+.background-grid img :hover{
+  opacity: 50%;
+}
+
 header {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   height: 100px;
   align-items: center;
 
@@ -29,7 +56,7 @@ header {
 
 .navbar-name {
 
-  font-size: 30px;
+  font-size: 200%;
 
   margin-left: 35px;
   justify-content: left;
@@ -47,31 +74,68 @@ header {
 
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 110%;
   text-align: center;
 }
 
 .emoji {
-  font-size: 40px;
+  font-size: 250%;
 }
 main {
-  font-size: 70px;
+  font-size: 400%;
   text-align: center;
   align-content: center;
 }
 
 .aboutme-intro {
+  display: grid;
+  flex-direction: column;
   height: 400px;
-
   align-content: center;
 }
+
 .aboutme-intro-title {
 
   color: rgb(145, 221, 107);
 }
 
+.aboutme-links {
+  margin-top: -5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.aboutme-links-icons {
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 30px;
+  align-content: center;
+  justify-items: center;
+}
+
+.aboutme-links-resume {
+  color: rgb(145, 221, 107);
+  background-color: #9993;
+  font-size: 20px;
+  border: solid 3px;
+  padding: 20px;
+
+}
+
+.aboutme-links-resume:hover {
+  background-color: #9994;
+
+}
+
 
 footer {
-
+  font-size: 30px;
   text-align: center;
+  align-content: center;
+
+
 }
